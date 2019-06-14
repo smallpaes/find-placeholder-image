@@ -2,10 +2,8 @@
 
 A functional Google Extension to help your "readily" generate placeholder image and find the right royalty free images with accessible links that you can use right away!
 
-: Generate customized placeholder image, search for royalty free images directly via four popular websites, get a report of all 
-
 ## Project First Look
-![image](https://drive.google.com/uc?export=view&id=1cX46bDKf9HWkq-smsapD26UKMZGVqTbj)
+![image](https://drive.google.com/uc?export=view&id=1VCcpHPT9fNrS4Pwa8VwBi8oplMRqSApc)
 
 
 ## Features
