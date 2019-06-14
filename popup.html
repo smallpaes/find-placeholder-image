@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Placeholder Image</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pop.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--Generate Plain Placeholder Image-->
+  <section class="placeholder-image bg-secondary border rounded p-2">
+    <form id='generate-image'>
+      <legend class='text-white'>Generate Placeholder Image</legend>
+      <div class="form-row justify-content-between">
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='width' placeholder="Width" required>
+        </div>
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='height' placeholder="Height">
+        </div>
+        <div class="col">
+          <select id="format" class="form-control form-control-sm">
+            <option value=''>Format</option>
+            <option value='.png'>.png</option>
+            <option value='.jpg'>.jpg</option>
+            <option value='.jpeg'>.jpeg</option>
+            <option value='.gif'>.gif</option>
+          </select>
+        </div>
+      </div>
+      <!--Second row-->
+      <div class="form-row justify-content-center mt-2">
+        <div class="col-6">
+          <input type="text" class="form-control form-control-sm" id="display-text" placeholder="Text on image...">
+        </div>
+        <div class="col-2">
+          <input type="color" class="form-control form-control-sm" id="bg-color" value="#D3D3D3">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-sm btn-info w-100" type="submit">Generate</button>
+        </div>
+      </div>
+    </form>
+    <div class="d-none flex-column" id='url-panel'>
+      <div class="input-group input-group-sm my-2 ">
+        <input type="text" class="form-control" aria-describedby="button-addon4" id='url-display'>
+        <div class="input-group-append">
+          <a href="#" class="btn btn-info" role="button" id='open-url' target='_blank'>Open</a>
+          <a href="#" class="btn btn-info" role="button" id='copy-url'>Copy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Find Royalty Free Image-->
+  <section class="bg-secondary border rounded p-2">
+    <form id='search-image'>
+      <legend class='text-white'>Search Royalty Free Image</legend>
+      <!--Second row-->
+      <div class="input-group input-group-sm my-2 ">
+        <input type="text" class="form-control form-control-sm" id="search-string" placeholder="Find an image" required>
+        <div class="input-group-append">
+          <button class="btn btn-info" type="submit" id='open-all'>Search All</button>
+        </div>
+      </div>
+    </form>
+    <div class="buttons">
+      <div class="form-row">
+        <div class="col-3">
+          <a href="https://pixabay.com/" class="btn btn-sm btn-info w-100 website" role="button" id='pixabay'
+            target='_blank'>Pixabay</a>
+        </div>
+        <div class="col-3">
+          <a href="https://www.pexels.com/" class="btn btn-sm btn-info w-100 website" role="button" id='pexels'
+            target='_blank'>Pexels</a>
+        </div>
+        <div class="col-3">
+          <a href="https://unsplash.com/" class="btn btn-sm btn-info w-100 website" role="button" id='unsplash'
+            target='_blank'>Unsplash</a>
+        </div>
+        <div class="col-3">
+          <a href="https://picjumbo.com/" class="btn btn-sm btn-info w-100 website" role="button" id='picjumbo'
+            target='_blank'>Picjumbo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+th h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: gray;
+}
+
+td.url {
+  cursor: pointer;
+}
+
+td.url:hover {
+  color: #404040;
+}
+
+th {
+  padding: 12px 8px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(2n+1){
+  background-color: #f2f2f2;
+}
