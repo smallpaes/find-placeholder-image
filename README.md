@@ -3,7 +3,7 @@
 A functional Google Extension to help your "readily" generate placeholder image and find the right royalty free images with accessible links that you can use right away!
 
 ## Project First Look
-![image](https://drive.google.com/uc?export=view&id=1VCcpHPT9fNrS4Pwa8VwBi8oplMRqSApc)
+![image](https://drive.google.com/uc?export=view&id=1_CtfGnEOlv-00k-QdLLWYN4CdUw2OqGb)
 
 
 ## Features
