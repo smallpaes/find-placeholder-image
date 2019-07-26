@@ -45,7 +45,8 @@ function updateUrl(keyWord) {
 }
 
 function createTab(websiteUrl) {
-  chrome.tabs.create({ url: websiteUrl });
+  // open a new tab and navigate it to the specified url
+  chrome.tabs.create({ url: websiteUrl })
 }
 
 generateImageForm.addEventListener('submit', function (event) {

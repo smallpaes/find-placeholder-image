@@ -1,12 +1,10 @@
 {
   "name": "Placeholder Image",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Quickly find the right placeholder image for yourself!",
   "permissions": [
     "contextMenus",
-    "activeTab",
-    "declarativeContent",
-    "storage"
+    "activeTab"
   ],
   "browser_action": {
     "default_popup": "popup.html",
