@@ -16,7 +16,7 @@ chrome.contextMenus.onClicked.addListener(function (info, tab) {
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     chrome.tabs.sendMessage(tabs[0].id, { getUrl: true })
     chrome.tabs.insertCSS({
-      file: 'content.css'
+      file: 'css/content.css'
     })
   })
 })

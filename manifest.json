@@ -17,7 +17,7 @@
   },
   "background": {
     "scripts": [
-      "background.js"
+      "js/background.js"
     ],
     "persistent": false
   },
@@ -33,7 +33,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js"
+        "js/content.js"
       ]
     }
   ],

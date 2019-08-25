@@ -57,7 +57,7 @@ Select the extension directory: find-placeholder-image
 4. Click on **OPEN** button to open the image in a new tab / **COPY** button to copy the URL.
 
 
-![Screen Shot of placeholder image generator in GIF](placeholderIma.gif)
+![Screen Shot of placeholder image generator in GIF](gif/placeholderIma.gif)
 
 
 ### Search for royalty free image 
@@ -67,7 +67,7 @@ Select the extension directory: find-placeholder-image
 4. Click on **Search All** button to directly show search results of all four websites.
 
 
-![Screen Shot of free image searcher in GIF](freeImage.gif)
+![Screen Shot of free image searcher in GIF](gif/freeImage.gif)
 
 
 ### Generate Image URL reports
@@ -79,7 +79,7 @@ Select the extension directory: find-placeholder-image
 6. Choose the size you prefer and click on the URL to copy the link.
 
 
-![Screen Shot of URL report in GIF](URLReport.gif)
+![Screen Shot of URL report in GIF](gif/URLReport.gif)
 
 ## Authors
 [Mike Huang](https://github.com/smallpaes)
