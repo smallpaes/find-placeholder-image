@@ -1,33 +1,133 @@
-th h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.4em;
+html, body {
+  font-size: 14px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  background: #4CA1AF;
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* Chrome 26+ */
+}
+
+section .table-container {
+  max-width: 700px;
+  margin: 0 auto;
+  max-height: 510px;
+  border-radius: .4rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead th {
+  padding: .75rem;
+  border-bottom: 2px solid #dee2e6;
   color: white;
-  font-weight: bold;
+  background: #343a40;
 }
 
-td,
-th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  color: gray;
+table tbody tr:hover {
+  background: #dddcdc;
 }
 
-td.url {
+table tr {
+  min-height: 38px;
+  text-align: left;
+  background-color: rgb(233, 233, 233);
+}
+
+table tr:nth-child(2n+1){
+  background-color: #f2f2f2;
+}
+
+table tr td {
+  padding: .85rem;
+  color: #6c757d;
+}
+
+table td.url {
+  position: relative;
+  max-width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   cursor: pointer;
 }
 
-td.url:hover {
-  color: #404040;
+table td.url .link {
+  text-decoration: none;
 }
 
-th {
-  padding: 12px 8px;
-  text-align: left;
-  background-color: #4CAF50;
+.url .tooltip-text {
+  position: absolute;
+  padding: .3rem .5rem;
+  top: 13%;
+  left: 50%;
+  z-index: 1;
   color: white;
+  font-weight: 600;
+  background: grey;
+  border-radius: .2rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 1px 0px rgba(173,173,173,1);
 }
 
-tr:nth-child(2n+1){
-  background-color: #f2f2f2;
+.url:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s linear;
+}
+
+/*Button*/
+div.button-panel {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.button-panel #reload {
+  padding: .5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  border-style: none;
+  border-radius: .1rem;
+  border-color: #3CB371;
+  background-color: #3CB371;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 0px rgb(52, 160, 101);
+}
+
+.button-panel #reload:hover {
+  background-color: rgb(52, 160, 101);
+  border-color: rgb(52, 160, 101);
+  transition: all .2s linear;
+}
+
+.button-panel #reload:focus,
+.button-panel #reload:active {
+  padding: .5rem;
+  outline: unset;
+  border-style: none;
+}
+
+/*Alert Message*/
+.alert-message {
+  padding: .5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: #f44336;
+}
+
+.alert-message .closebtn {
+  font-size: 1.4rem;
+  cursor: pointer;
 }
