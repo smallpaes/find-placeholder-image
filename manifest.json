@@ -1,7 +1,7 @@
 {
   "name": "Placeholder Image",
-  "version": "1.1",
-  "description": "Quickly find the right placeholder image for yourself!",
+  "version": "1.2",
+  "description": "Quickly generate and find the right placeholder image for work!",
   "permissions": [
     "contextMenus",
     "activeTab"
